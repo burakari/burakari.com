@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burak Arı | Portfolio</title>
+    <meta name="description" content="Burak Arı: Mechanical Engineering, Law, and Data Science.">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -14,6 +15,7 @@
             --card-gray: #161b22;
             --text-white: #f0f6fc;
             --text-dim: #8b949e;
+            --transition-smooth: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
         * {
@@ -29,7 +31,7 @@
             line-height: 1.6;
         }
 
-        /* Top Accent (Minimal Bee Signature) */
+        /* Top Accent (Minimal Bee Signature) - ÖZELLİĞİN KORUNDU */
         body::before {
             content: "";
             position: fixed;
@@ -47,7 +49,7 @@
             padding: 80px 20px;
         }
 
-        /* Hero */
+        /* Hero Header */
         header {
             text-align: center;
             margin-bottom: 80px;
@@ -69,14 +71,20 @@
             text-transform: uppercase;
         }
 
-        /* Sections */
+        /* Ana İçerik Yapısı */
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        /* Sections - TÜM HOVER VE ÖLÇEKLENDİRME EFEKTLERİ KORUNDU */
         section {
             background: var(--card-gray);
             padding: 40px;
             border-radius: 24px;
-            margin-bottom: 30px;
             border: 1px solid rgba(255, 215, 0, 0.05);
-            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: var(--transition-smooth);
         }
 
         section:hover {
@@ -103,7 +111,7 @@
             font-size: 1.1rem;
         }
 
-        /* Grid */
+        /* Grid - ITEM EFEKTLERİ KORUNDU */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -131,16 +139,12 @@
             display: block;
         }
 
-        .item h3 {
-            margin-bottom: 10px;
-            font-size: 1.3rem;
-        }
-
-        /* Buttons */
+        /* Buttons - TÜM TASARIM DETAYLARI AKTİF */
         .social-row {
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
+            margin-top: 20px;
         }
 
         .btn {
@@ -173,65 +177,78 @@
             color: #000;
         }
 
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
         @media (max-width: 768px) {
             h1 { font-size: 2.8rem; }
-            section { padding: 25px; }
+            section { padding: 30px 20px; }
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <header>
+        <header role="banner">
             <h1>Burak Arı</h1>
             <div class="tagline">Law • Data Science • Engineering</div>
         </header>
 
-        <section>
-            <h2><i class="fas fa-user-astronaut"></i> About Me</h2>
-            <p>
-                I am a unique blend of <strong>Mechanical Engineering</strong> (MSc Aerospace) and <strong>Law</strong> (LLB). 
-                I bridge the gap between heavy technical systems and legal frameworks by using 
-                <strong>Data Science</strong> as my primary tool for analysis and innovation.
-            </p>
-        </section>
+        <main>
+            <section id="about">
+                <h2><i class="fas fa-user-astronaut"></i> About Me</h2>
+                <p>
+                    I am a unique blend of <strong>Mechanical Engineering</strong> (MSc Aerospace) and <strong>Law</strong> (LLB). 
+                    I bridge the gap between heavy technical systems and legal frameworks by using 
+                    <strong>Data Science</strong> as my primary tool for analysis and innovation.
+                </p>
+            </section>
 
-        <section>
-            <h2><i class="fas fa-microchip"></i> Expertise</h2>
-            <div class="grid">
-                <div class="item">
-                    <i class="fas fa-rocket"></i>
-                    <h3>Aerospace</h3>
-                    <p>Advanced flight dynamics, control systems, and structural mechanics for aerospace applications.</p>
+            <section id="expertise">
+                <h2><i class="fas fa-microchip"></i> Expertise</h2>
+                <div class="grid">
+                    <article class="item">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Aerospace</h3>
+                        <p>Advanced flight dynamics, control systems, and structural mechanics for aerospace applications.</p>
+                    </article>
+                    <article class="item">
+                        <i class="fas fa-gavel"></i>
+                        <h3>Legal Tech</h3>
+                        <p>Integrating technical precision with legal compliance and regulatory data analysis.</p>
+                    </article>
+                    <article class="item">
+                        <i class="fas fa-brain"></i>
+                        <h3>Data Science</h3>
+                        <p>Uncovering insights from complex datasets to solve cross-disciplinary problems.</p>
+                    </article>
                 </div>
-                <div class="item">
-                    <i class="fas fa-gavel"></i>
-                    <h3>Legal Tech</h3>
-                    <p>Integrating technical precision with legal compliance and regulatory data analysis.</p>
-                </div>
-                <div class="item">
-                    <i class="fas fa-brain"></i>
-                    <h3>Data Science</h3>
-                    <p>Uncovering insights from complex datasets to solve cross-disciplinary problems.</p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <h2><i class="fas fa-paper-plane"></i> Get In Touch</h2>
-            <p style="margin-bottom: 25px;">Ready to collaborate or have a question? Reach out through any of the channels below.</p>
-            <div class="social-row">
-                <a href="mailto:burak.ari2025@gmail.com" class="btn">
-                    <i class="fas fa-envelope"></i> Email Me
-                </a>
-                <a href="https://github.com/BeeBurky" target="_blank" class="btn btn-outline">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="#" class="btn btn-outline">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-            </div>
-        </section>
+            <section id="contact">
+                <h2><i class="fas fa-paper-plane"></i> Get In Touch</h2>
+                <p style="margin-bottom: 25px;">Ready to collaborate or have a question? Reach out through any of the channels below.</p>
+                <nav class="social-row" aria-label="Social Links">
+                    <a href="mailto:burakari.com@gmail.com?subject=Contact from Portfolio" class="btn">
+                        <i class="fas fa-envelope"></i> Email Me
+                    </a>
+                    <a href="https://github.com/BeeBurky" target="_blank" class="btn btn-outline" rel="noopener">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="#" class="btn btn-outline" rel="noopener">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </nav>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Burak Arı. All Rights Reserved.</p>
+        </footer>
     </div>
 
 </body>
