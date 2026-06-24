@@ -1,3 +1,6 @@
+
+
+Burakari portfolio v2 · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +30,7 @@ nav::after {
     );
     z-index: 1001;
 }
-
+ 
 /* Sayfa kaydırıldığında navigasyonun altındaki varsayılan ince çizgiyi kaldıralım 
    böylece sadece bizim şeridimiz görünür */
 nav.scrolled {
@@ -43,17 +46,17 @@ nav.scrolled {
             --text-white: #f0f6fc;
             --text-dim: #8b949e;
         }
-
+ 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+ 
         html {
             scroll-behavior: smooth;
         }
-
+ 
         body {
             font-family: 'Poppins', system-ui, sans-serif;
             background-color: var(--space);
@@ -61,30 +64,30 @@ nav.scrolled {
             line-height: 1.6;
             overflow-x: hidden;
         }
-
+ 
         /* Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
-
+ 
         ::-webkit-scrollbar-track {
             background: var(--space);
         }
-
+ 
         ::-webkit-scrollbar-thumb {
             background: linear-gradient(180deg, var(--gold), var(--gold-dark));
             border-radius: 4px;
         }
-
+ 
         ::-webkit-scrollbar-thumb:hover {
             background: var(--gold);
         }
-
+ 
         ::selection {
             background: rgba(255, 215, 0, 0.3);
             color: #fff;
         }
-
+ 
         /* Utilities */
         .gradient-text {
             background: linear-gradient(135deg, #fff 0%, var(--gold) 50%, var(--gold-dark) 100%);
@@ -92,13 +95,13 @@ nav.scrolled {
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-
+ 
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-
+ 
         /* Navigation */
         nav {
             position: fixed;
@@ -109,32 +112,32 @@ nav.scrolled {
             padding: 20px 0;
             transition: all 0.4s ease;
         }
-
+ 
         nav.scrolled {
             background: rgba(11, 14, 20, 0.9);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid rgba(255, 215, 0, 0.1);
             padding: 15px 0;
         }
-
+ 
         nav .container {
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
-
+ 
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
             text-decoration: none;
         }
-
+ 
         .nav-links {
             display: flex;
             align-items: center;
             gap: 8px;
         }
-
+ 
         .nav-links a {
             padding: 10px 20px;
             border-radius: 50px;
@@ -144,17 +147,17 @@ nav.scrolled {
             font-weight: 500;
             transition: all 0.3s ease;
         }
-
+ 
         .nav-links a:hover,
         .nav-links a.active {
             color: var(--gold);
             background: rgba(255, 215, 0, 0.1);
         }
-
+ 
         .mobile-nav {
             display: none;
         }
-
+ 
         /* Hero Section */
         #home {
             min-height: 100vh;
@@ -165,14 +168,14 @@ nav.scrolled {
             overflow: hidden;
             padding: 100px 0;
         }
-
+ 
         .hero-bg {
             position: absolute;
             inset: 0;
             pointer-events: none;
             overflow: hidden;
         }
-
+ 
         .hero-bg .glow-1 {
             position: absolute;
             top: 10%;
@@ -184,7 +187,7 @@ nav.scrolled {
             filter: blur(60px);
             animation: pulse 4s ease-in-out infinite;
         }
-
+ 
         .hero-bg .glow-2 {
             position: absolute;
             bottom: 10%;
@@ -196,7 +199,7 @@ nav.scrolled {
             filter: blur(60px);
             animation: pulse 4s ease-in-out infinite 2s;
         }
-
+ 
         .orbit {
             position: absolute;
             top: 50%;
@@ -206,25 +209,25 @@ nav.scrolled {
             border-radius: 50%;
             animation: rotate 30s linear infinite;
         }
-
+ 
         .orbit-1 {
             width: 700px;
             height: 700px;
         }
-
+ 
         .orbit-2 {
             width: 500px;
             height: 500px;
             animation-direction: reverse;
             animation-duration: 20s;
         }
-
+ 
         .hero-content {
             text-align: center;
             position: relative;
             z-index: 10;
         }
-
+ 
         .badge {
             display: inline-flex;
             align-items: center;
@@ -238,19 +241,19 @@ nav.scrolled {
             transform: translateY(30px);
             animation: fadeInUp 0.8s ease forwards;
         }
-
+ 
         .badge svg {
             width: 16px;
             height: 16px;
             color: var(--gold);
         }
-
+ 
         .badge span {
             font-size: 0.9rem;
             color: var(--gold);
             font-weight: 500;
         }
-
+ 
         h1 {
             font-size: clamp(3rem, 8vw, 6rem);
             font-weight: 800;
@@ -259,7 +262,7 @@ nav.scrolled {
             transform: translateY(30px);
             animation: fadeInUp 0.8s ease 0.1s forwards;
         }
-
+ 
         .tagline {
             display: flex;
             flex-wrap: wrap;
@@ -270,28 +273,28 @@ nav.scrolled {
             transform: translateY(30px);
             animation: fadeInUp 0.8s ease 0.2s forwards;
         }
-
+ 
         .tagline-item {
             display: flex;
             align-items: center;
             gap: 8px;
             color: var(--gold);
         }
-
+ 
         .tagline-item svg {
             width: 20px;
             height: 20px;
         }
-
+ 
         .tagline-item span {
             font-size: 1.1rem;
             font-weight: 500;
         }
-
+ 
         .tagline-separator {
             color: rgba(255, 215, 0, 0.5);
         }
-
+ 
         .hero-description {
             font-size: 1.2rem;
             color: var(--text-dim);
@@ -302,7 +305,7 @@ nav.scrolled {
             transform: translateY(30px);
             animation: fadeInUp 0.8s ease 0.3s forwards;
         }
-
+ 
         .hero-buttons {
             display: flex;
             flex-wrap: wrap;
@@ -312,7 +315,7 @@ nav.scrolled {
             transform: translateY(30px);
             animation: fadeInUp 0.8s ease 0.4s forwards;
         }
-
+ 
         .btn {
             display: inline-flex;
             align-items: center;
@@ -324,35 +327,35 @@ nav.scrolled {
             transition: all 0.3s ease;
             font-size: 1rem;
         }
-
+ 
         .btn-primary {
             background: var(--gold);
             color: var(--space);
         }
-
+ 
         .btn-primary:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
         }
-
+ 
         .btn-outline {
             background: transparent;
             color: var(--gold);
             border: 2px solid var(--gold);
         }
-
+ 
         .btn-outline:hover {
             background: var(--gold);
             color: var(--space);
             transform: translateY(-3px);
             box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
         }
-
+ 
         .btn svg {
             width: 20px;
             height: 20px;
         }
-
+ 
         .scroll-indicator {
             position: absolute;
             bottom: 40px;
@@ -368,33 +371,33 @@ nav.scrolled {
             animation: fadeIn 0.8s ease 0.6s forwards;
             transition: color 0.3s ease;
         }
-
+ 
         .scroll-indicator:hover {
             color: var(--gold);
         }
-
+ 
         .scroll-indicator span {
             font-size: 0.85rem;
         }
-
+ 
         .scroll-indicator svg {
             width: 24px;
             height: 24px;
             animation: bounce 2s infinite;
         }
-
+ 
         /* Sections */
         section {
             padding: 100px 0;
             position: relative;
         }
-
+ 
         .section-header {
             text-align: center;
             max-width: 600px;
             margin: 0 auto 60px;
         }
-
+ 
         .section-badge {
             display: inline-flex;
             align-items: center;
@@ -405,31 +408,31 @@ nav.scrolled {
             border-radius: 50px;
             margin-bottom: 20px;
         }
-
+ 
         .section-badge svg {
             width: 16px;
             height: 16px;
             color: var(--gold);
         }
-
+ 
         .section-badge span {
             font-size: 0.9rem;
             color: var(--gold);
             font-weight: 500;
         }
-
+ 
         h2 {
             font-size: clamp(2rem, 5vw, 3rem);
             font-weight: 700;
             margin-bottom: 20px;
         }
-
+ 
         .section-description {
             color: var(--text-dim);
             font-size: 1.1rem;
             line-height: 1.8;
         }
-
+ 
         /* About Section */
         #about .container {
             display: grid;
@@ -437,36 +440,36 @@ nav.scrolled {
             gap: 60px;
             align-items: center;
         }
-
+ 
         .about-content {
             opacity: 0;
             transform: translateX(-50px);
             transition: all 0.8s ease;
         }
-
+ 
         .about-content.visible {
             opacity: 1;
             transform: translateX(0);
         }
-
+ 
         .about-content p {
             color: var(--text-dim);
             font-size: 1.1rem;
             line-height: 1.8;
             margin-bottom: 20px;
         }
-
+ 
         .about-content strong {
             color: var(--gold);
         }
-
+ 
         .credentials {
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
             margin-top: 30px;
         }
-
+ 
         .credential-card {
             display: flex;
             align-items: center;
@@ -476,7 +479,7 @@ nav.scrolled {
             border: 1px solid rgba(255, 215, 0, 0.1);
             border-radius: 16px;
         }
-
+ 
         .credential-icon {
             width: 50px;
             height: 50px;
@@ -486,35 +489,35 @@ nav.scrolled {
             align-items: center;
             justify-content: center;
         }
-
+ 
         .credential-icon svg {
             width: 24px;
             height: 24px;
             color: var(--gold);
         }
-
+ 
         .credential-info .title {
             font-weight: 600;
             margin-bottom: 4px;
         }
-
+ 
         .credential-info .subtitle {
             font-size: 0.85rem;
             color: var(--text-dim);
         }
-
+ 
         .about-visual {
             position: relative;
             opacity: 0;
             transform: translateX(50px);
             transition: all 0.8s ease 0.2s;
         }
-
+ 
         .about-visual.visible {
             opacity: 1;
             transform: translateX(0);
         }
-
+ 
         .about-visual::before {
             content: '';
             position: absolute;
@@ -526,7 +529,7 @@ nav.scrolled {
             border-radius: 50%;
             filter: blur(40px);
         }
-
+ 
         .about-visual::after {
             content: '';
             position: absolute;
@@ -538,7 +541,7 @@ nav.scrolled {
             border-radius: 50%;
             filter: blur(40px);
         }
-
+ 
         .glass-card {
             background: rgba(22, 27, 34, 0.8);
             backdrop-filter: blur(20px);
@@ -548,7 +551,7 @@ nav.scrolled {
             position: relative;
             overflow: hidden;
         }
-
+ 
         .glass-card::before {
             content: '';
             position: absolute;
@@ -559,7 +562,7 @@ nav.scrolled {
             background: linear-gradient(to bottom left, rgba(255, 215, 0, 0.2), transparent);
             border-bottom-left-radius: 100%;
         }
-
+ 
         .glass-header {
             display: flex;
             align-items: center;
@@ -568,7 +571,7 @@ nav.scrolled {
             position: relative;
             z-index: 1;
         }
-
+ 
         .glass-icon {
             width: 60px;
             height: 60px;
@@ -578,23 +581,23 @@ nav.scrolled {
             align-items: center;
             justify-content: center;
         }
-
+ 
         .glass-icon svg {
             width: 28px;
             height: 28px;
             color: var(--gold);
         }
-
+ 
         .glass-title {
             font-size: 1.3rem;
             font-weight: 700;
         }
-
+ 
         .glass-subtitle {
             color: var(--text-dim);
             font-size: 0.95rem;
         }
-
+ 
         .feature-list {
             display: flex;
             flex-direction: column;
@@ -602,7 +605,7 @@ nav.scrolled {
             position: relative;
             z-index: 1;
         }
-
+ 
         .feature-item {
             display: flex;
             align-items: center;
@@ -611,7 +614,7 @@ nav.scrolled {
             background: rgba(11, 14, 20, 0.5);
             border-radius: 12px;
         }
-
+ 
         .feature-icon {
             width: 40px;
             height: 40px;
@@ -622,34 +625,34 @@ nav.scrolled {
             justify-content: center;
             flex-shrink: 0;
         }
-
+ 
         .feature-icon svg {
             width: 20px;
             height: 20px;
             color: var(--gold);
         }
-
+ 
         .feature-text .title {
             font-weight: 600;
             margin-bottom: 4px;
         }
-
+ 
         .feature-text .desc {
             font-size: 0.85rem;
             color: var(--text-dim);
         }
-
+ 
         /* Expertise Section */
         #expertise {
             background: linear-gradient(to bottom, transparent, rgba(255, 215, 0, 0.02), transparent);
         }
-
+ 
         .expertise-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 25px;
         }
-
+ 
         .expertise-card {
             background: linear-gradient(135deg, var(--space-light) 0%, var(--space-lighter) 100%);
             border-radius: 24px;
@@ -660,12 +663,12 @@ nav.scrolled {
             transform: translateY(30px);
             transition: all 0.6s ease;
         }
-
+ 
         .expertise-card.visible {
             opacity: 1;
             transform: translateY(0);
         }
-
+ 
         .expertise-card::before {
             content: '';
             position: absolute;
@@ -679,7 +682,7 @@ nav.scrolled {
             mask-composite: exclude;
             pointer-events: none;
         }
-
+ 
         .expertise-card::after {
             content: '';
             position: absolute;
@@ -690,16 +693,16 @@ nav.scrolled {
             background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
             transition: left 0.5s ease;
         }
-
+ 
         .expertise-card:hover::after {
             left: 100%;
         }
-
+ 
         .expertise-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 215, 0, 0.15);
         }
-
+ 
         .expertise-icon {
             width: 60px;
             height: 60px;
@@ -711,34 +714,34 @@ nav.scrolled {
             margin-bottom: 25px;
             transition: all 0.3s ease;
         }
-
+ 
         .expertise-card:hover .expertise-icon {
             background: rgba(255, 215, 0, 0.3);
         }
-
+ 
         .expertise-icon svg {
             width: 28px;
             height: 28px;
             color: var(--gold);
         }
-
+ 
         .expertise-card h3 {
             font-size: 1.5rem;
             margin-bottom: 15px;
         }
-
+ 
         .expertise-card p {
             color: var(--text-dim);
             line-height: 1.7;
             margin-bottom: 20px;
         }
-
+ 
         .expertise-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
         }
-
+ 
         .expertise-tag {
             padding: 6px 14px;
             background: rgba(255, 215, 0, 0.1);
@@ -747,7 +750,7 @@ nav.scrolled {
             font-size: 0.8rem;
             color: var(--gold);
         }
-
+ 
         /* Skills Section */
         #skills .container {
             display: grid;
@@ -755,31 +758,31 @@ nav.scrolled {
             gap: 60px;
             align-items: center;
         }
-
+ 
         .skills-content {
             opacity: 0;
             transform: translateX(-50px);
             transition: all 0.8s ease;
         }
-
+ 
         .skills-content.visible {
             opacity: 1;
             transform: translateX(0);
         }
-
+ 
         .skills-content p {
             color: var(--text-dim);
             font-size: 1.1rem;
             line-height: 1.8;
             margin-bottom: 30px;
         }
-
+ 
         .stats-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
         }
-
+ 
         .stat-card {
             padding: 25px;
             background: var(--space-light);
@@ -787,7 +790,7 @@ nav.scrolled {
             border-radius: 16px;
             text-align: center;
         }
-
+ 
         .stat-number {
             font-size: 2.5rem;
             font-weight: 800;
@@ -797,12 +800,12 @@ nav.scrolled {
             background-clip: text;
             margin-bottom: 5px;
         }
-
+ 
         .stat-label {
             color: var(--text-dim);
             font-size: 0.9rem;
         }
-
+ 
         .skills-bars {
             display: flex;
             flex-direction: column;
@@ -811,33 +814,33 @@ nav.scrolled {
             transform: translateX(50px);
             transition: all 0.8s ease 0.2s;
         }
-
+ 
         .skills-bars.visible {
             opacity: 1;
             transform: translateX(0);
         }
-
+ 
         .skill-item {
             display: flex;
             flex-direction: column;
             gap: 8px;
         }
-
+ 
         .skill-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
+ 
         .skill-name {
             font-weight: 500;
         }
-
+ 
         .skill-percent {
             color: var(--gold);
             font-weight: 600;
         }
-
+ 
         .skill-bar {
             height: 10px;
             background: var(--space-light);
@@ -845,7 +848,7 @@ nav.scrolled {
             overflow: hidden;
             position: relative;
         }
-
+ 
         .skill-progress {
             height: 100%;
             background: linear-gradient(90deg, var(--gold), var(--gold-dark));
@@ -854,7 +857,7 @@ nav.scrolled {
             transition: width 1s ease;
             position: relative;
         }
-
+ 
         .skill-progress::after {
             content: '';
             position: absolute;
@@ -865,16 +868,71 @@ nav.scrolled {
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
             animation: shimmer 2s infinite;
         }
-
+ 
+        /* Certifications Section - NEW */
+        #certifications {
+            background: linear-gradient(to bottom, transparent, rgba(255, 215, 0, 0.02), transparent);
+        }
+ 
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+ 
+        .cert-card {
+            background: var(--space-light);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+ 
+        .cert-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+ 
+        .cert-card:hover {
+            border-color: rgba(255, 215, 0, 0.3);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+ 
+        .cert-issuer {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+ 
+        .cert-name {
+            font-size: 0.9rem;
+            font-weight: 600;
+            line-height: 1.4;
+            color: var(--text-white);
+        }
+ 
+        .cert-date {
+            font-size: 0.78rem;
+            color: var(--text-dim);
+        }
+ 
         /* Contact Section */
         #contact {
             text-align: center;
         }
-
+ 
         #contact .section-header {
             margin-bottom: 50px;
         }
-
+ 
         .contact-buttons {
             display: flex;
             flex-wrap: wrap;
@@ -882,7 +940,7 @@ nav.scrolled {
             gap: 15px;
             margin-bottom: 50px;
         }
-
+ 
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -890,7 +948,7 @@ nav.scrolled {
             max-width: 800px;
             margin: 0 auto;
         }
-
+ 
         .contact-card {
             padding: 30px;
             background: var(--space-light);
@@ -900,36 +958,36 @@ nav.scrolled {
             color: inherit;
             transition: all 0.3s ease;
         }
-
+ 
         .contact-card:hover {
             transform: translateY(-5px);
             border-color: rgba(255, 215, 0, 0.3);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
-
+ 
         .contact-card svg {
             width: 28px;
             height: 28px;
             color: var(--gold);
             margin-bottom: 15px;
         }
-
+ 
         .contact-label {
             font-size: 0.85rem;
             color: var(--text-dim);
             margin-bottom: 5px;
         }
-
+ 
         .contact-value {
             font-weight: 600;
         }
-
+ 
         /* Footer */
         footer {
             padding: 40px 0;
             border-top: 1px solid rgba(255, 215, 0, 0.1);
         }
-
+ 
         footer .container {
             display: flex;
             flex-wrap: wrap;
@@ -937,36 +995,36 @@ nav.scrolled {
             align-items: center;
             gap: 20px;
         }
-
+ 
         .footer-logo {
             font-size: 1.5rem;
             font-weight: 700;
         }
-
+ 
         .footer-copy {
             color: var(--text-dim);
             font-size: 0.9rem;
         }
-
+ 
         .footer-social {
             display: flex;
             gap: 15px;
         }
-
+ 
         .footer-social a {
             color: var(--text-dim);
             transition: color 0.3s ease;
         }
-
+ 
         .footer-social a:hover {
             color: var(--gold);
         }
-
+ 
         .footer-social svg {
             width: 22px;
             height: 22px;
         }
-
+ 
         /* Animations */
         @keyframes fadeInUp {
             from {
@@ -978,7 +1036,7 @@ nav.scrolled {
                 transform: translateY(0);
             }
         }
-
+ 
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -987,7 +1045,7 @@ nav.scrolled {
                 opacity: 1;
             }
         }
-
+ 
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% {
                 transform: translateY(0);
@@ -999,7 +1057,7 @@ nav.scrolled {
                 transform: translateY(-5px);
             }
         }
-
+ 
         @keyframes pulse {
             0%, 100% {
                 opacity: 0.5;
@@ -1008,7 +1066,7 @@ nav.scrolled {
                 opacity: 1;
             }
         }
-
+ 
         @keyframes rotate {
             from {
                 transform: translate(-50%, -50%) rotate(0deg);
@@ -1017,7 +1075,7 @@ nav.scrolled {
                 transform: translate(-50%, -50%) rotate(360deg);
             }
         }
-
+ 
         @keyframes shimmer {
             0% {
                 left: -100%;
@@ -1026,7 +1084,7 @@ nav.scrolled {
                 left: 100%;
             }
         }
-
+ 
         /* Responsive */
         @media (max-width: 1024px) {
             #about .container,
@@ -1034,99 +1092,107 @@ nav.scrolled {
                 grid-template-columns: 1fr;
                 gap: 50px;
             }
-
+ 
             .expertise-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
+ 
+            .cert-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
-
+ 
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
-
+ 
             .mobile-nav {
                 display: flex;
                 gap: 10px;
             }
-
+ 
             .mobile-nav a {
                 padding: 10px;
                 border-radius: 50%;
                 color: var(--text-dim);
                 transition: all 0.3s ease;
             }
-
+ 
             .mobile-nav a:hover,
             .mobile-nav a.active {
                 color: var(--gold);
                 background: rgba(255, 215, 0, 0.1);
             }
-
+ 
             .mobile-nav svg {
                 width: 20px;
                 height: 20px;
             }
-
+ 
             .expertise-grid {
                 grid-template-columns: 1fr;
             }
-
+ 
             .contact-grid {
                 grid-template-columns: 1fr;
             }
-
+ 
             .stats-grid {
                 grid-template-columns: 1fr 1fr;
             }
-
+ 
             .credentials {
                 flex-direction: column;
             }
-
+ 
             .credential-card {
                 width: 100%;
             }
-
+ 
             footer .container {
                 flex-direction: column;
                 text-align: center;
             }
-
+ 
             .orbit {
                 display: none;
             }
+ 
+            .cert-grid {
+                grid-template-columns: 1fr;
+            }
         }
-
+ 
         @media (max-width: 480px) {
             h1 {
                 font-size: 2.5rem;
             }
-
+ 
             .tagline {
                 flex-direction: column;
                 gap: 10px;
             }
-
+ 
             .tagline-separator {
                 display: none;
             }
-
+ 
             .hero-buttons {
                 flex-direction: column;
                 width: 100%;
             }
-
+ 
             .btn {
                 width: 100%;
                 justify-content: center;
             }
-
+ 
             .stats-grid {
                 grid-template-columns: 1fr;
             }
         }
-
+ 
         /* Reduced motion */
         @media (prefers-reduced-motion: reduce) {
             *,
@@ -1151,6 +1217,7 @@ nav.scrolled {
                 <a href="#about">About</a>
                 <a href="#expertise">Expertise</a>
                 <a href="#skills">Skills</a>
+                <a href="#certifications">Certifications</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="mobile-nav">
@@ -1177,7 +1244,7 @@ nav.scrolled {
             </div>
         </div>
     </nav>
-
+ 
     <!-- Hero Section -->
     <section id="home">
         <div class="hero-bg">
@@ -1218,8 +1285,9 @@ nav.scrolled {
                     </div>
                 </div>
                 <p class="hero-description">
-                    Bridging the gap between heavy technical systems and legal frameworks 
-                    through the power of data science and innovation.
+                    Data Scientist and ML practitioner with a strong portfolio spanning customer behavior analysis,
+                    sales forecasting, predictive modeling, and financial market analysis — bridging engineering precision
+                    with legal insight through the power of data.
                 </p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">
@@ -1244,7 +1312,7 @@ nav.scrolled {
             </svg>
         </a>
     </section>
-
+ 
     <!-- About Section -->
     <section id="about">
         <div class="container">
@@ -1257,14 +1325,14 @@ nav.scrolled {
                 </div>
                 <h2>A Unique <span class="gradient-text">Blend</span> of Disciplines</h2>
                 <p>
-                    I am a multidisciplinary professional with a Master's in Aerospace Engineering 
-                    and a Bachelor's in Law. This unique combination allows me to approach complex 
-                    problems from both technical and legal perspectives.
+                    I'm a multidisciplinary professional with degrees in <strong>Aerospace Engineering</strong> (İTÜ),
+                    <strong>Mechanical Engineering</strong> (Yıldız Technical University), and <strong>Law</strong> (Marmara University).
+                    This rare combination allows me to approach complex problems from both technical and legal perspectives.
                 </p>
                 <p>
-                    My passion lies in using <strong>Data Science</strong> as the 
-                    bridge between these worlds—analyzing complex datasets, building predictive models, 
-                    and creating innovative solutions that span across industries.
+                    My passion lies in using <strong>Data Science</strong> as the bridge between these worlds — building
+                    end-to-end ML pipelines, multi-horizon financial analyses, and data-driven products that span across industries.
+                    Certified by IBM, Microsoft, Google, UC Davis, and Wharton.
                 </p>
                 <div class="credentials">
                     <div class="credential-card">
@@ -1274,8 +1342,19 @@ nav.scrolled {
                             </svg>
                         </div>
                         <div class="credential-info">
-                            <div class="title">MSc Aerospace</div>
-                            <div class="subtitle">Engineering</div>
+                            <div class="title">MSc Aerospace Engineering</div>
+                            <div class="subtitle">Istanbul Technical University (İTÜ)</div>
+                        </div>
+                    </div>
+                    <div class="credential-card">
+                        <div class="credential-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                            </svg>
+                        </div>
+                        <div class="credential-info">
+                            <div class="title">BSc Mechanical Engineering</div>
+                            <div class="subtitle">Yıldız Technical University</div>
                         </div>
                     </div>
                     <div class="credential-card">
@@ -1285,8 +1364,8 @@ nav.scrolled {
                             </svg>
                         </div>
                         <div class="credential-info">
-                            <div class="title">LLB</div>
-                            <div class="subtitle">Law Degree</div>
+                            <div class="title">LLB Law</div>
+                            <div class="subtitle">Marmara University · 2021–2026</div>
                         </div>
                     </div>
                 </div>
@@ -1312,8 +1391,19 @@ nav.scrolled {
                                 </svg>
                             </div>
                             <div class="feature-text">
-                                <div class="title">Technical Precision</div>
-                                <div class="desc">Engineering mindset applied to every problem</div>
+                                <div class="title">End-to-End ML Pipelines</div>
+                                <div class="desc">From raw SQL extraction to model deployment and insight delivery</div>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <div class="title">Financial Market Analysis</div>
+                                <div class="desc">CAGR, Sharpe Ratio, Max Drawdown across global and Turkish markets</div>
                             </div>
                         </div>
                         <div class="feature-item">
@@ -1323,19 +1413,8 @@ nav.scrolled {
                                 </svg>
                             </div>
                             <div class="feature-text">
-                                <div class="title">Legal Compliance</div>
-                                <div class="desc">Understanding regulatory frameworks</div>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </div>
-                            <div class="feature-text">
-                                <div class="title">Global Perspective</div>
-                                <div class="desc">Cross-disciplinary international experience</div>
+                                <div class="title">Legal & Compliance Awareness</div>
+                                <div class="desc">KVKK compliance consulting and data regulatory frameworks</div>
                             </div>
                         </div>
                     </div>
@@ -1343,7 +1422,7 @@ nav.scrolled {
             </div>
         </div>
     </section>
-
+ 
     <!-- Expertise Section -->
     <section id="expertise">
         <div class="container">
@@ -1356,7 +1435,7 @@ nav.scrolled {
                 </div>
                 <h2>Areas of <span class="gradient-text">Excellence</span></h2>
                 <p class="section-description">
-                    Combining deep technical knowledge with strategic thinking to deliver 
+                    Combining deep technical knowledge with strategic thinking to deliver
                     exceptional results across multiple domains.
                 </p>
             </div>
@@ -1364,15 +1443,31 @@ nav.scrolled {
                 <div class="expertise-card">
                     <div class="expertise-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                         </svg>
                     </div>
-                    <h3>Aerospace</h3>
-                    <p>Advanced flight dynamics, control systems, and structural mechanics for cutting-edge aerospace applications.</p>
+                    <h3>Data Science & ML</h3>
+                    <p>End-to-end ML pipelines spanning classification, regression, clustering, and time series — applied to real-world customer, sales, and financial datasets.</p>
                     <div class="expertise-tags">
-                        <span class="expertise-tag">Flight Dynamics</span>
-                        <span class="expertise-tag">Control Systems</span>
-                        <span class="expertise-tag">Structural Analysis</span>
+                        <span class="expertise-tag">scikit-learn</span>
+                        <span class="expertise-tag">XGBoost</span>
+                        <span class="expertise-tag">Pandas</span>
+                        <span class="expertise-tag">Power BI</span>
+                    </div>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
+                    <h3>Financial Analysis</h3>
+                    <p>Multi-horizon investment analysis across global and Turkish markets — CAGR, Sharpe Ratio, Max Drawdown, and real returns via Fisher equation.</p>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">yfinance</span>
+                        <span class="expertise-tag">Sharpe Ratio</span>
+                        <span class="expertise-tag">CAGR</span>
+                        <span class="expertise-tag">Time Series</span>
                     </div>
                 </div>
                 <div class="expertise-card">
@@ -1381,32 +1476,18 @@ nav.scrolled {
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
                         </svg>
                     </div>
-                    <h3>Legal Tech</h3>
-                    <p>Integrating technical precision with legal compliance, regulatory analysis, and data-driven legal solutions.</p>
+                    <h3>Legal Tech & Compliance</h3>
+                    <p>KVKK compliance consulting and regulatory document authoring — applying legal reasoning to data environments for a rare edge in B2B data science.</p>
                     <div class="expertise-tags">
-                        <span class="expertise-tag">Regulatory Analysis</span>
+                        <span class="expertise-tag">KVKK / GDPR</span>
                         <span class="expertise-tag">Compliance</span>
-                        <span class="expertise-tag">Legal Data</span>
-                    </div>
-                </div>
-                <div class="expertise-card">
-                    <div class="expertise-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                        </svg>
-                    </div>
-                    <h3>Data Science</h3>
-                    <p>Uncovering insights from complex datasets to solve cross-disciplinary problems with machine learning.</p>
-                    <div class="expertise-tags">
-                        <span class="expertise-tag">Machine Learning</span>
-                        <span class="expertise-tag">Data Analysis</span>
-                        <span class="expertise-tag">Predictive Modeling</span>
+                        <span class="expertise-tag">Legal Research</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+ 
     <!-- Skills Section -->
     <section id="skills">
         <div class="container">
@@ -1419,17 +1500,17 @@ nav.scrolled {
                 </div>
                 <h2>Technical <span class="gradient-text">Proficiency</span></h2>
                 <p>
-                    A diverse toolkit spanning programming languages, data science frameworks, 
-                    engineering software, and legal research platforms.
+                    A diverse toolkit spanning Python, SQL, BI platforms, ML frameworks,
+                    and legal research — with certified expertise from IBM, Microsoft, Google, UC Davis, and Wharton.
                 </p>
                 <div class="stats-grid">
                     <div class="stat-card">
-                        <div class="stat-number">5+</div>
-                        <div class="stat-label">Years Experience</div>
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Certifications</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">Projects Completed</div>
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Degrees</div>
                     </div>
                 </div>
             </div>
@@ -1445,25 +1526,7 @@ nav.scrolled {
                 </div>
                 <div class="skill-item">
                     <div class="skill-header">
-                        <span class="skill-name">MATLAB & Engineering</span>
-                        <span class="skill-percent">90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-skill="90"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header">
                         <span class="skill-name">Machine Learning</span>
-                        <span class="skill-percent">85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-skill="85"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">Legal Research & Analysis</span>
                         <span class="skill-percent">88%</span>
                     </div>
                     <div class="skill-bar">
@@ -1473,6 +1536,24 @@ nav.scrolled {
                 <div class="skill-item">
                     <div class="skill-header">
                         <span class="skill-name">SQL & Databases</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Financial Analysis</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Power BI & Dashboards</span>
                         <span class="skill-percent">82%</span>
                     </div>
                     <div class="skill-bar">
@@ -1481,17 +1562,82 @@ nav.scrolled {
                 </div>
                 <div class="skill-item">
                     <div class="skill-header">
-                        <span class="skill-name">JavaScript/TypeScript</span>
-                        <span class="skill-percent">75%</span>
+                        <span class="skill-name">Legal Research & Compliance</span>
+                        <span class="skill-percent">80%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-progress" data-skill="75"></div>
+                        <div class="skill-progress" data-skill="80"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+ 
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                    </svg>
+                    <span>Certifications</span>
+                </div>
+                <h2>Verified <span class="gradient-text">Expertise</span></h2>
+                <p class="section-description">
+                    Certified by world-leading institutions across data science, AI, business intelligence, and legal technology.
+                </p>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-issuer">Microsoft · Coursera</div>
+                    <div class="cert-name">Power BI Data Analyst</div>
+                    <div class="cert-date">Apr 2026</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-issuer">UC Davis · Coursera</div>
+                    <div class="cert-name">SQL for Data Science Specialization</div>
+                    <div class="cert-date">Apr 2026</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-issuer">Vanderbilt University · Coursera</div>
+                    <div class="cert-name">Prompt Engineering Specialization</div>
+                    <div class="cert-date">Apr 2026</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-issuer">Wharton / UPenn · Coursera</div>
+                    <div class="cert-name">Customer Analytics</div>
+                    <div class="cert-date">Apr 2026</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-issuer">Yale University · Coursera</div>
+                    <div class="cert-name">A Law Student's Toolkit</div>
+                    <div class="cert-date">Apr 2026</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-issuer">Vanderbilt University · Coursera</div>
+                    <div class="cert-name">Generative AI for Legal Services</div>
+                    <div class="cert-date">Apr 2026</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-issuer">IBM · Coursera</div>
+                    <div class="cert-name">IBM Data Science Professional Certificate</div>
+                    <div class="cert-date">Mar 2026</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-issuer">Google · Coursera</div>
+                    <div class="cert-name">Google AI Specialization</div>
+                    <div class="cert-date">Mar 2026</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-issuer">DGCA Turkey</div>
+                    <div class="cert-name">IHA-1 Drone Pilot License</div>
+                    <div class="cert-date">Mar 2026</div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
@@ -1504,8 +1650,8 @@ nav.scrolled {
                 </div>
                 <h2>Let's <span class="gradient-text">Connect</span></h2>
                 <p class="section-description">
-                    Ready to collaborate on your next project? Have a question or just want to say hello? 
-                    I'd love to hear from you.
+                    Open to remote data science roles, freelance analytical projects, and research collaborations.
+                    I respond within 24 hours.
                 </p>
             </div>
             <div class="contact-buttons">
@@ -1553,7 +1699,7 @@ nav.scrolled {
             </div>
         </div>
     </section>
-
+ 
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -1578,7 +1724,7 @@ nav.scrolled {
             </div>
         </div>
     </footer>
-
+ 
     <script>
         // Navigation scroll effect
         const navbar = document.getElementById('navbar');
@@ -1589,21 +1735,20 @@ nav.scrolled {
                 navbar.classList.remove('scrolled');
             }
         });
-
+ 
         // Active navigation link
         const sections = document.querySelectorAll('section[id]');
         const navLinks = document.querySelectorAll('.nav-links a, .mobile-nav a');
-
+ 
         window.addEventListener('scroll', () => {
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
                 if (scrollY >= sectionTop - 200) {
                     current = section.getAttribute('id');
                 }
             });
-
+ 
             navLinks.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href') === '#' + current) {
@@ -1611,18 +1756,18 @@ nav.scrolled {
                 }
             });
         });
-
+ 
         // Intersection Observer for animations
         const observerOptions = {
-            threshold: 0.2,
+            threshold: 0.15,
             rootMargin: '-50px'
         };
-
+ 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
-                    
+ 
                     // Animate skill bars
                     if (entry.target.classList.contains('skills-bars')) {
                         const skillBars = entry.target.querySelectorAll('.skill-progress');
@@ -1636,12 +1781,12 @@ nav.scrolled {
                 }
             });
         }, observerOptions);
-
+ 
         // Observe elements
-        document.querySelectorAll('.about-content, .about-visual, .expertise-card, .skills-content, .skills-bars').forEach(el => {
+        document.querySelectorAll('.about-content, .about-visual, .expertise-card, .skills-content, .skills-bars, .cert-card').forEach(el => {
             observer.observe(el);
         });
-
+ 
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
@@ -1658,3 +1803,7 @@ nav.scrolled {
     </script>
 </body>
 </html>
+ 
+
+
+
