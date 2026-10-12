@@ -1,0 +1,21 @@
+burakari.com — yeni site dosyaları
+
+Bu dosyaları GitHub reposunun kök dizinine koy; "en" klasörü de olduğu gibi gitsin.
+Eski index.html'in yerine yenisi geçer. Repoda CNAME dosyası varsa ona dokunma.
+
+index.html          Türkçe sayfa (burakari.com)
+en/index.html       İngilizce sayfa (burakari.com/en/)
+404.html            İki dilli "sayfa bulunamadı" sayfası
+og-tr.jpg, og-en.jpg  Link paylaşımlarında çıkan önizleme görselleri
+apple-touch-icon.png, favicon.ico   Sekme ve ana ekran ikonları
+robots.txt, sitemap.xml             Arama motorları için (iki dil birbirine bağlı)
+llms.txt            Yapay zekâ asistanları için kısa tanıtım
+
+Google Analytics: Her iki index.html'in başında  var GA_ID='';  satırı var.
+Tırnakların arasına GA4 ölçüm kimliğini (G-XXXXXXXXXX) yazarsan takip başlar;
+ziyaretçi izin verene kadar çerez yazılmaz (KVKK/GDPR uyumlu). Boş kaldıkça hiçbir
+takip kodu yüklenmez, çerez uyarısı da çıkmaz.
+
+Yabancı dildeki bir ziyaretçi Türkçe sayfaya girerse sağ altta küçük bir
+"This page is also available in English" notu çıkar (tersi de geçerli). Otomatik
+yönlendirme yapılmaz.

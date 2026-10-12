@@ -1,0 +1,43 @@
+# Burak Arı
+
+> Mechanical engineer, law graduate and data scientist, bringing law, engineering and data to the same table. Turkish version: https://burakari.com/ · English version: https://burakari.com/en/
+
+Burak Arı is based in Istanbul. Today I work on e-commerce analytics, conversion optimization, AI projects and Shopify apps.
+
+## Background
+
+- Engineering: Yıldız Technical University, Mechanical Engineering. This is where I learned to take systems apart, measure them and put them back together. After graduating, I worked in aviation as an aircraft maintenance engineer.
+- Aerospace: Istanbul Technical University, MSc program in Aerospace Engineering. I worked on flight dynamics, control systems and structural mechanics, and spent time in academia as a research assistant. My research interest: how composite structures behave under blast loads.
+- Law: Marmara University Faculty of Law, 2026. I learned how rules are written and how they are read. My drive to build bridges between the technical world and the law took shape here.
+- Data: Today. With data science and AI, I bring these three fields to one table: asking the right question, measuring, and letting the numbers make the call.
+
+## Focus
+
+- Data science and AI: I turn messy data into decisions. On an e-commerce site, I find where visitors get stuck, measure it and fix it. (E-commerce analytics and conversion rate optimization (CRO); GA4, dashboards and reporting automation; AI and machine learning projects; Shopify app development)
+- Law and technology: I translate between technical teams and the law, helping products, data and processes get built in line with regulation. (KVKK (Turkish data protection) compliance documentation; Contracts and operational documents; Analysis of regulatory and compliance data; Legal compliance in technical projects)
+- Engineering: I break a problem into parts, model it and find the weakest link. A discipline I picked up in aviation, and one I use in everything I do. (Flight dynamics and control systems; Structural mechanics and composite materials; Aircraft maintenance engineering; İHA-1 drone pilot license)
+
+## Certificates and licenses
+
+- Microsoft: Power BI
+- Google: AI
+- UC Davis: SQL
+- Vanderbilt University: Prompt Engineering
+- Wharton: Customer Analytics
+- Yale University: Law Student’s Toolkit
+- License: İHA-1 drone pilot
+
+## Ventures
+
+- İçerik Tüketicisi: branding, social media and e-commerce consulting — https://iceriktuketicisi.com
+- Crispy Asian: Far Eastern restaurant in Kadıköy, Istanbul — https://crispyasian.com
+
+## Languages
+
+Turkish (native), English (professional), German, Spanish, Arabic
+
+## Contact
+
+- E-mail: burak.ari2025@gmail.com
+- LinkedIn: https://www.linkedin.com/in/burakaridata
+- GitHub: https://github.com/BeeBurky
