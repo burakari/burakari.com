@@ -8,7 +8,7 @@
 - Data Science as primary tool
 
 ## Expertise
-- Aerospace: advanced flight dynamics, control systems and structural mechanics for aerospace applications.
+- Engineering: a precise, structured way of thinking grounded in how things actually work, brought to every problem, technical or not.
 - Legal Tech: integrating technical precision with legal compliance and regulatory data analysis.
 - Data Science: uncovering insights from complex datasets to solve cross-disciplinary problems.
 
