@@ -1,19 +1,19 @@
 # Burak Arı
 
-> Law · Data Science · Engineering. I bridge heavy technical systems and legal frameworks with data.
+> Personal site of Burak Arı: law, data science and engineering. He bridges heavy technical systems and legal frameworks, using data science as his primary tool for analysis and innovation.
 
-I’m a unique blend of Mechanical Engineering (MSc Aerospace) and Law (LLB). I bridge the gap between heavy technical systems and legal frameworks, using Data Science as my primary tool for analysis and innovation.
+## Background
+- Mechanical Engineering (MSc Aerospace)
+- Law (LLB)
+- Data Science as primary tool
 
 ## Expertise
-
-- Aerospace: Advanced flight dynamics, control systems and structural mechanics for aerospace applications.
-- Legal Tech: Integrating technical precision with legal compliance and regulatory data analysis.
-- Data Science: Uncovering insights from complex datasets to solve cross-disciplinary problems.
+- Aerospace: advanced flight dynamics, control systems and structural mechanics for aerospace applications.
+- Legal Tech: integrating technical precision with legal compliance and regulatory data analysis.
+- Data Science: uncovering insights from complex datasets to solve cross-disciplinary problems.
 
 ## Contact
-
-- E-mail: burak.ari2025@gmail.com
-- GitHub: https://github.com/burakari
+- Email: burak@burakari.com
 - LinkedIn: https://www.linkedin.com/in/burakaridata
-
-Turkish version: https://burakari.com/ · English version: https://burakari.com/en/
+- GitHub: https://github.com/burakari
+- Site: https://burakari.com/
